@@ -1,0 +1,56 @@
+<div class="container mt-3 size">
+  <div >
+    <div >
+      <h3  style="color:blue;">Enter Department Details</h3>
+    </div>
+    <div class="p-3">
+      <form #employeeForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input
+            placeholder="Enter Department Id"
+            type="number"
+            class="form-control"
+            name="id"
+            id="id"
+            [(ngModel)]="editEmployee.id"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            placeholder="Enter Department Name"
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            [(ngModel)]="editEmployee.name"
+          />
+        </div>
+
+        
+        <div class="form-group">
+          <input
+            placeholder="Enter GroupName"
+            type="text"
+            class="form-control"
+            name="salary"
+            id="salary"
+            [(ngModel)]="editEmployee.salary"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">ModifiedDate</label>
+          <input
+            type="date"
+            class="form-control"
+            name="dob"
+            id="dob"
+            [(ngModel)]="editEmployee.dob"
+          />
+        </div>
+        <input type="submit" class="btn btn-success " value="Submit" />
+        <br />
+        <br />
+      </form>
+    </div>
+  </div>
+</div>
